@@ -15,8 +15,14 @@ class App extends React.Component {
     }
   }
 
-  handleChange = () => {
-    const 
+  toggleTodo = (clickedOnId) => {
+    this.setState({
+      todosList: this.state.todosList.map(item => {
+        return item.id === clickedOnId
+        ? {...item, completed: !item.completed}
+        : item;
+      })
+    })
   }
   
   render() {
