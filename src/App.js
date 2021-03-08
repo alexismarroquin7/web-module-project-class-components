@@ -31,7 +31,7 @@ class App extends React.Component {
         } else {
           return item;
         }
-        
+
       })
     })
   }
@@ -39,11 +39,11 @@ class App extends React.Component {
   addTask = (todoName) => {
     const newTodo = {
       name: todoName,
-      id: Date.now() + todoName,
+      id: Date.now(),
       completed: false
     }
     this.setState({
-      todosList: [...this.todosList, newTodo]
+      todosList: [...this.state.todosList, newTodo]
     })
   } 
 
