@@ -18,9 +18,20 @@ class App extends React.Component {
   toggleTodo = (clickedOnId) => {
     this.setState({
       todosList: this.state.todosList.map(item => {
-        return item.id === clickedOnId
-        ? {...item, completed: !item.completed}
-        : item;
+        
+        // return item.id === clickedOnId
+        // ? {...item, completed: !item.completed}
+        // : item;
+
+        if(item.id === clickedOnId){
+          return {
+            ...item,
+            completed: !item.completed
+          };
+        } else {
+          return item;
+        }
+        
       })
     })
   }
@@ -31,13 +42,16 @@ class App extends React.Component {
       id: Date.now() + todoName,
       completed: false
     }
+    this.setState({
+      todosList: [...this.todosList, newTodo]
+    })
   } 
-  
+
   render() {
     return (
       <div>
-      <TodoList todosList={this.state.todosList}/>        
-      <TodoForm />        
+      <TodoList toggleTodo={this.toggleTodo} todosList={this.state.todosList}/>        
+      <TodoForm addTask={this.addTask}/>        
       </div>
     );
   }

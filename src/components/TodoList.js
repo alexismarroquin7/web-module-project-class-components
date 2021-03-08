@@ -2,13 +2,13 @@ import React from "react"
 import Todo from "./Todo"
 
 const TodoList = props => {
-    const {todosList} = props;
+    const {todosList, toggleTodo} = props;
 
     return (
         <div>
         <h1>TodoList</h1>
         {todosList.map(todoItem => {
-            return <Todo key={todoItem.id} todo={todoItem}/>;
+            return <Todo toggleTodo={toggleTodo} key={todoItem.id} todo={todoItem}/>;
         })}
         </div>
     );

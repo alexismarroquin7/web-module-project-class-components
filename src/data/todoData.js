@@ -1,32 +1,32 @@
 
 const todoData = [
     {
-        task: "Take out the trash",
+        name: "Take out the trash",
         id: Date.now() + 1,
         completed: false
     },
     {
-        task: "Wash dishes",
+        name: "Wash dishes",
         id: Date.now() + 2,
         completed: false
     },
     {
-        task: "Laundry",
+        name: "Laundry",
         id: Date.now() + 3,
         completed: false
     },
     {
-        task: "Meal Prep",
+        name: "Meal Prep",
         id: Date.now() + 4,
         completed: false
     },
     {
-        task: "Iron pants",
+        name: "Iron pants",
         id: Date.now() + 5,
         completed: false
     },
     {
-        task: "Vacuum rug",
+        name: "Vacuum rug",
         id: Date.now() + 6,
         completed: false
     },

@@ -5,7 +5,7 @@ class TodoForm extends React.Component {
         return (
         <form>
     
-            {console.log(this.props)}
+            {/* {console.log(this.props)} */}
         <input 
             type="text"
             name="taskText" 
