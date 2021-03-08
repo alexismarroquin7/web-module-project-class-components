@@ -5,9 +5,6 @@ const Todo = (props) => {
     const {name, id, completed} = todo;
     return (
     <div>
-    {
-        completed ? console.log(todo.name, todo.completed):console.log(todo.name, todo.completed)
-    }
     <h3 
         onClick={() => toggleTodo(id)}
         className={`${completed ? "completed":""}`}
