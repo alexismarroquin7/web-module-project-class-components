@@ -4,6 +4,8 @@ class TodoForm extends React.Component {
     render(){
         return (
         <form>
+    
+            {console.log(this.props)}
         <input 
             type="text"
             name="taskText" 

@@ -24,6 +24,14 @@ class App extends React.Component {
       })
     })
   }
+
+  addTask = (todoName) => {
+    const newTodo = {
+      name: todoName,
+      id: Date.now() + todoName,
+      completed: false
+    }
+  } 
   
   render() {
     return (
