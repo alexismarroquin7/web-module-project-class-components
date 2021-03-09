@@ -1,0 +1,24 @@
+
+.Todo {
+    border-top:1px solid white;
+    
+    width:100%;
+    padding:1em;    
+    display:flex;
+}
+.incompleted {
+    border:1px solid rgba(147, 38, 38, 0.544);
+    padding:1em;
+}
+
+.incompleted:hover {
+    /* border:1px solid green; */
+    background-color:rgba(147, 38, 38, 0.544);
+}
+
+
+.completed {
+    text-decoration:line-through;
+    padding:1em;
+    background-color:rgba(58, 144, 90, 0.5);
+}
