@@ -4,11 +4,13 @@ const Todo = (props) => {
     const {todo, toggleTodo} = props;
     const {name, id, completed} = todo;
     return (
-    <div>
+    <div className="Todo">
     <h3 
         onClick={() => toggleTodo(id)}
-        className={`${completed ? "completed":""}`}
-    >{name}</h3>
+        className={`${completed ? "completed":"incompleted"}`}
+    >
+        {name}
+    </h3>
     </div>
     );
 
